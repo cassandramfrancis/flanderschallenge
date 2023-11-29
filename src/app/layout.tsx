@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Open_Sans } from 'next/font/google'
+import { Providers } from '../components/providers'
 import './globals.css'
-
 
 const opensans = Open_Sans({ subsets: ['latin'] })
 
@@ -16,8 +16,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={opensans.className}>{children}</body>
-    </html>
+    <Providers>
+      <html lang="en">
+        <body className={opensans.className}>{children}</body>
+      </html>
+    </Providers>
   )
 }
