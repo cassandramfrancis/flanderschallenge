@@ -6,7 +6,7 @@ export const setLoginReducer: GlobalStateReducer = (state, action) => {
   }
 
   if (typeof action.data !== 'boolean') {
-    throw Error('Invalid action.data for loggedIn - must be boolean');
+    throw new Error('Invalid action.data for loggedIn - must be boolean');
   }
 
   return {
