@@ -9,7 +9,7 @@ export async function GET(req: NextRequest) {
   await randomDelay();
 
   if (username !== 'MAINT' || password !== 'safetyiskey') {
-    return NextResponse.json({error: 'Invalid username or password'}, {status: 401});
+    return NextResponse.json({ error: 'Invalid username or password' }, {status: 401});
   }
 
   return NextResponse.json({ login: true });
