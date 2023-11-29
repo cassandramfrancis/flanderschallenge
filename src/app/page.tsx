@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image'
 import { Heading } from '../components/heading'
 import { Login, LoginProps } from '../components/login'
 import { useStore } from '../components/store';
