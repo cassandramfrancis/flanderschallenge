@@ -17,7 +17,7 @@ export function Login({ onSubmit }: LoginProps) {
     </div>
     
     <div className="my-4 mb-0">
-      <input className="py-1 px-2 w-full rounded-md border-none text-slate-700 ring-transparent bg-slate-200 cursor-pointer hover:bg-slate-300 hover:ring-slate-300 hover:text-black" type="submit" value="Login" />
+      <input className="py-1 px-2 w-full rounded-md border-none text-slate-700 ring-transparent bg-slate-200 cursor-pointer text-white" type="submit" value="Login" style={{background: '#95bce2'}} />
     </div>
   </form>
 }
