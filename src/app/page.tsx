@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image'
+import FlandersImageSrc from './image.jpg';
 import { Heading } from '../components/heading'
 import { Login, LoginProps } from '../components/login'
 import { useStore } from '../components/store';
@@ -41,7 +42,7 @@ export default function Home() {
 
   return (
     <main className="container mx-auto m-8">
-      <Image alt="Flanders Image" src="/image.jpg" width="640" height="480" className="max-w-sm my-4 box-border rounded-md" style={{overflow: 'hidden'}} />
+      <Image priority alt="Flanders Image" src={FlandersImageSrc} width="640" height="480" className="max-w-sm my-4 box-border rounded-md" style={{overflow: 'hidden'}} />
       <Heading>Flanders Frontend Coding Challenge</Heading>
       
       {state.loggedIn
